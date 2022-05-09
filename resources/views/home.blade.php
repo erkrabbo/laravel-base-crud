@@ -3,7 +3,7 @@
 @section('pageTitle', 'Home - Comics DB')
 
 @section('main')
-    <main class="d-flex justify-content-center align-items-center h-100">
+    <main id="home-main" class="d-flex justify-content-center align-items-center">
         <h1>HOMEPAGE</h1>
     </main>
 @endsection

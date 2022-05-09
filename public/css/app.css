@@ -10962,3 +10962,16 @@ a.text-dark:focus {
   }
 }
 
+main {
+  padding: auto;
+  padding-top: 2rem;
+}
+
+#home-main {
+  height: 100vh;
+}
+
+footer {
+  height: 100%;
+}
+

@@ -19,7 +19,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{ $comic->price }}</td>
+                        <td>€{{ $comic->price }}</td>
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->sale_date }}</td>
                         <td>{{ $comic->type }}</td>
@@ -29,8 +29,7 @@
 
             <p class="pb-5">{{ $comic->description }}</p>
 
-            <button class="btn btn-primary">BUY NOW</button>
-
+            <button class="btn btn-primary mb-4">BUY NOW</button>
 
         </div>
     </main>

@@ -10,7 +10,7 @@ class ComicController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function index()
     {
@@ -44,7 +44,7 @@ class ComicController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function show(Comic $comic)
     {

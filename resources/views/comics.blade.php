@@ -12,9 +12,9 @@
                         <div class="card h-100">
                             <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="card-image-top">
                             <div class="card-body">
-                                <h5 class="card-title w-100">{{ $comic->title }}</h5>
-                                <small class="w-100">€{{ $comic->price }}</small>
-                                <p class="card-text h-100 align-self-end">{{ $comic->type }}</p>
+                                <h4 class="card-title font-weight-bold w-100">{{ $comic->title }}</h4>
+                                <p class="card-text">{{ strtoupper($comic->type) }}</p>
+                                <small class="w-100 align-self-end">€{{ $comic->price }}</small>
                                 <a href="{{ route('comics.show', $comic) }}" class="stretched-link"></a>
                             </div>
                         </div>
