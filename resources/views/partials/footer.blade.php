@@ -1,0 +1,9 @@
+<footer>
+    <ul>
+        <li>Footer link</li>
+        <li>Footer link</li>
+        <li>Footer link</li>
+        <li>Footer link</li>
+        <li>Footer link</li>
+    </ul>
+</footer>
