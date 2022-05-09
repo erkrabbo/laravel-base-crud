@@ -21,6 +21,7 @@
                     </div>
                 @endforeach
             </div>
+            {{ $comicsList->onEachSide(3)->links('pagination::bootstrap-4') }}
         </div>
     </main>
 @endsection
