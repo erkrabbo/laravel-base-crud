@@ -37270,6 +37270,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js", 7));
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
