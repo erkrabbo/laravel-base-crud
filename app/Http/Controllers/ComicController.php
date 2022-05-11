@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comic;
 use Illuminate\Http\Request;
+use Exception;
 
 class ComicController extends Controller
 {
@@ -37,7 +38,12 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        return redirect(route('comics.index'));
+        try{
+            $newComic = Comic::create($request->all());
+            return redirect(route('comics.show', $newComic->id));
+        } catch(Exception $e) {
+            return redirect(route('comics.index'));
+        }
     }
 
     /**

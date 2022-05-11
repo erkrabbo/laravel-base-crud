@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" class="form-control" id="price" placeholder="Insert the price here..." name="price">
+                    <input type="number" class="form-control" id="price" placeholder="Insert the price here..." name="price">
                 </div>
                 <div class="form-group">
                     <label for="series">Series</label>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label for="sale_date">Sale date</label>
-                    <input type="text" class="form-control" id="sale_date" placeholder="Insert the sale date here..." name="sale_date">
+                    <input type="date" class="form-control" id="sale_date" placeholder="Insert the sale date here..." name="sale_date">
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
