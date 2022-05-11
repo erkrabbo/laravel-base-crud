@@ -3,8 +3,9 @@
 @section('pageTitle', 'Comics - Add a comic')
 
 @section('main')
-    <main>
-        <div class="container">
+<main>
+    <div class="container">
+            @yield('error')
             {{-- <h2>{{ $exception->getMessage() }}</h2> --}}
             <form method="POST" action="{{ route('comics.store')}}" class="py-2">
                 @csrf
