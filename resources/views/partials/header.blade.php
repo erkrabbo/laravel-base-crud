@@ -22,7 +22,7 @@
                         <div class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="{{ route('comics.index') }}">All comics</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Add comic</a>
+                          <a class="dropdown-item" href="{{ route('comics.create') }}">Add comic</a>
                         </div>
                     </li>
 
