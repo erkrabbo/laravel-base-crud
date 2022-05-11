@@ -5,6 +5,7 @@
 @section('main')
     <main>
         <div class="container text-center">
+            @yield('success')
             <h2>{{ $comic->title }}</h2>
             <img class="mb-5" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
 

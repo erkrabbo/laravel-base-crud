@@ -5,7 +5,7 @@
 @section('main')
     <main>
         <div class="container">
-            {{-- <h2>{{ $exception->getMessage() }}</h2> --}}
+            <h2>DEVI COMPILARE TUTTI I CAMPI</h2>
             <form method="POST" action="{{ route('comics.store')}}" class="py-2">
                 @csrf
                 <div class="form-group">

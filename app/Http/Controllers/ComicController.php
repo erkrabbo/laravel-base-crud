@@ -40,9 +40,9 @@ class ComicController extends Controller
     {
         try{
             $newComic = Comic::create($request->all());
-            return redirect(route('comics.show', $newComic->id));
+            return redirect(route('creation-success', $newComic));
         } catch(Exception $e) {
-            return redirect(route('comics.index'));
+            return redirect(route('creation-error'));
         }
     }
 
