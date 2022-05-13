@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="number" class="form-control {{ $errors->has('price')? 'is-invalid' : (count($errors) ? 'is-valid' : '') }}" id="price" placeholder="Insert the price here..." name="price" value="{{ count($errors) ? old('price') : $comic->thumb }}">
+                    <input type="number" class="form-control {{ $errors->has('price')? 'is-invalid' : (count($errors) ? 'is-valid' : '') }}" id="price" placeholder="Insert the price here..." name="price" value="{{ count($errors) ? old('price') : $comic->price }}">
                     <div id="priceFeedback" class="invalid-feedback">
                         Please enter a valid price.
                     </div>
