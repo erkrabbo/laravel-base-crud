@@ -4,8 +4,8 @@
 
 @section('main')
     <main>
-        <div class="container text-center">
-            @yield('success')
+        <div class="container text-center pb-2">
+            <a class="btn btn-primary mb-3" href="{{ URL::previous() }}"> &LeftArrow; BACK</a>
             <h2>{{ $comic->title }}</h2>
             <img class="mb-5" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
 
@@ -30,8 +30,8 @@
 
             <p class="pb-5">{{ $comic->description }}</p>
 
-            <button class="btn btn-primary mb-4">BUY NOW</button>
-
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+            <a href="{{ route('comics.edit', $comic) }}" class="btn btn-success">EDIT</a>
         </div>
     </main>
 @endsection

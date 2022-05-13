@@ -6,7 +6,8 @@
 <main>
     <div class="container">
             @yield('error')
-            <form method="POST" action="{{ route('comics.store')}}" class="needs-validation py-2" novalidate>
+            <form method="POST" action="{{ route('comics.store')}}" class="needs-validation col-lg-6 m-auto py-2" novalidate>
+                <a class="btn btn-primary mb-3" href="{{ URL::previous() }}"> &LeftArrow; BACK</a>
                 @csrf
                 <div class="form-group">
                     <label for="title">Title</label>
