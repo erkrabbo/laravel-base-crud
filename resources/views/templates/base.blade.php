@@ -16,5 +16,6 @@
     @include('partials.footer')
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/clock.js') }}"></script>
 </body>
 </html>
