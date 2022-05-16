@@ -51,7 +51,7 @@ class ComicController extends Controller
         );
 
         $newComic = Comic::create($request->all());
-        return redirect(route('comics.show', $newComic));
+        return redirect(route('comics.show', $newComic))->with('status', 'Success!');
     }
 
     /**
@@ -98,7 +98,7 @@ class ComicController extends Controller
         );
 
         $comic->update($request->all());
-        return redirect(route('comics.show', $comic));
+        return redirect(route('comics.show', $comic))->with('status', 'Updated succesfully!');
     }
 
     /**

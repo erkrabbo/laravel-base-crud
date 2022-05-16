@@ -5,6 +5,11 @@
 @section('main')
     <main>
         <div class="container text-center pb-2">
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
             <a class="btn btn-primary mb-3" href="{{ URL::previous() }}"> &LeftArrow; BACK</a>
             <h2>{{ $comic->title }}</h2>
             <img class="mb-5" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
