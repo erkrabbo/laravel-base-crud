@@ -10,7 +10,7 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <a class="btn btn-primary mb-3" href="{{ URL::previous() }}"> &LeftArrow; BACK</a>
+            <a class="btn btn-primary mb-3" href="{{ URL::previous() == route('comics.edit', $comic) ? route('comics.index') : URL::previous() }}"> &LeftArrow; BACK</a>
             <h2>{{ $comic->title }}</h2>
             <img class="mb-5" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
 
