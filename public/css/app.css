@@ -10993,7 +10993,7 @@ footer {
   transform: translateY(-3px);
   /* account for the height of the clock hands */
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.8s ease-in;
 }
 
 .hand {

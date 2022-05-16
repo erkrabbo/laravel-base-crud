@@ -114,7 +114,7 @@ function setDate() {
 if (secondHand && minsHand && hourHand) {
   setTimeout(function () {
     hands.style.opacity = 1;
-  }, 100);
+  }, 200);
   setInterval(setDate, 1000);
   setDate();
 }
